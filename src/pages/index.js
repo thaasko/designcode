@@ -1,12 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
-import Header from '../components/header'
+import React from "react";
+import Link from "gatsby-link";
+import Header from "../components/header";
+import Card from "../components/Card";
 
 const IndexPage = () => (
   <div>
     <Header />
     <div className="Hero">
-      <div className="Herogroup">
+      <div className="HeroGroup">
         <div>
           <h1>
             Learn to <br />design and code React apps
@@ -18,7 +19,16 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-  </div>
-)
 
-export default IndexPage
+    <div className="Cards">
+      <h2>11 courses, more coming</h2>
+      <Card
+        title="React for designers"
+        text="12 sections"
+        image={require("../images/wallpaper.jpg")}
+      />
+    </div>
+  </div>
+);
+
+export default IndexPage;
